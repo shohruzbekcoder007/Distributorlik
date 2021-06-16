@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.charts-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.chart-box {
+  /* padding-bottom: 30px; */
+  /* padding-top: 50px; */
+  min-height: 100%;
+  margin: 30px 0;
+}
+.chart-box-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+.pagination-container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.chart-header {
+  padding: 20px 25px 20px 20px;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #262626;
+  display: flex;
+  justify-content: space-between;
+}
+.chart-header .title {
+  width: 30%;
+}
+.main-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.main-section .input-box {
+  display: flex;
+}
+.main-section .input-box input {
+  width: 100%;
+  margin-right: 30px;
+}
+
+.selector select {
+  width: 100%;
+}
+.bar_chart .selector {
+  display: none;
+}
+
+.pie-chart-box .pie-chart-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.pie-chart-box {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2a3142;
+  border-radius: 10px;
+  padding: 5px 0;
+}
+.graphics-box {
+  width: 100%;
+  min-height: 250px;
+  background: #2a3142;
+  margin: 60px 0;
+  border-radius: 10px;
+}
+.graphics-box .graphics {
+  width: 100%;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-graphics {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.column-graphics .graphics-item {
+  width: 45%;
+}
+@media (max-width: 767px) {
+  .charts-box {
+    display: block;
+    margin: 0;
+  }
+  .chart-box-item {
+    display: block;
+    margin: 0;
+  }
+  .input-box {
+    flex-direction: column;
+  }
+  .chart-box {
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0;
+    min-height: 100%;
+  }
+  .chart-box canvas {
+    width: 100%;
+  }
+  .chart-header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .chart-header .title {
+    width: 100%;
+  }
+  .main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-section .input-box {
+    display: flex;
+  }
+  .main-section .input-box input {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .selector select {
+    width: 180px;
+    margin-top: 5px;
+  }
+  .custom-button {
+    margin-top: 30px;
+  }
+  .pie-chart-box {
+    flex-direction: column;
+  }
+  .column-graphics {
+    flex-direction: column;
+  }
+  .column-graphics .graphics-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .charts-box {
+    display: block;
+    margin: 0;
+  }
+  .chart-box-item {
+    display: block;
+    margin: 0;
+  }
+  .chart-box {
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    min-height: 100%;
+  }
+  .chart-box canvas {
+    width: 100%;
+  }
+  .chart-header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .chart-header .title {
+    width: 100%;
+  }
+  .main-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .main-section .input-box {
+    display: flex;
+  }
+  .main-section .input-box input {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .selector select {
+    width: 180px;
+    margin-top: 5px;
+  }
+}
+.input-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+}
+.custom-input {
+  display: block;
+}
+.custom-button {
+  margin-top: 30px;
+  height: 37px;
+}
+@media (max-width: 768px) {
+  .input-box {
+    width: 100%;
+  }
+  .custom-input {
+    width: 100%;
+  }
+  .custom-button {
+    width: 100%;
+  }
+}

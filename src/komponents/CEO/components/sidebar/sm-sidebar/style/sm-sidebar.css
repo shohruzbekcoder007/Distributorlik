@@ -1,0 +1,140 @@
+.sm-sidebar-box {
+  position: fixed;
+  width: 5%;
+  height: 100vh;
+  background: #2a3142;
+  transition: all 0.3s ease;
+  z-index: 9;
+}
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99 !important;
+}
+.log-out {
+  position: absolute;
+  right: 30px;
+  font-size: 24px;
+  color: #8699ad;
+  cursor: pointer;
+  border: 1px solid #8699ad;
+  border-radius: 5px;
+  padding: 0px 7px;
+}
+.nav-top .logo {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.nav-top .logo img {
+  width: 70px;
+}
+.sm-sidebar-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 30px;
+  color: #8699ad;
+  font-size: 20px;
+}
+.sm-sidebar-link li {
+  position: relative;
+  padding: 12px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sm-sidebar-link li span {
+  text-align: center;
+  font-size: 8px;
+  margin-top: 2px;
+}
+.sm-sidebar-link li:hover {
+  background: #343e55;
+  color: #fff;
+}
+.sm-sidebar-link .sub-menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0px;
+  left: -250%;
+  min-width: 150px;
+  min-height: 58px;
+  background: #2a3142;
+  opacity: 0;
+  z-index: -8;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.sub-menu a {
+  padding: 15px 5px;
+  color: #ccc;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 100;
+  z-index: -9;
+}
+.sub-menu a:hover {
+  color: #fff !important;
+  background: #343e55;
+  text-align: center;
+}
+.sm-sidebar-link li:hover .sub-menu {
+  left: 100%;
+  opacity: 1;
+  color: #fff;
+}
+.nav {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+  background: #36394c;
+  z-index: 99;
+}
+.active-link {
+  background: #343e55;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .sm-sidebar-box {
+    width: 15%;
+  }
+  .nav-top .logo {
+    left: 0;
+    display: block;
+  }
+  .nav-top .logo img {
+    width: 50px;
+  }
+  .sm-sidebar-link li:hover .sub-menu {
+    left: 100%;
+  }
+  .sub-menu a {
+    padding: 10px;
+  }
+  .log-out {
+    right: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sm-sidebar-box {
+    width: 8%;
+  }
+  .nav-top .logo {
+    left: 5px;
+  }
+}

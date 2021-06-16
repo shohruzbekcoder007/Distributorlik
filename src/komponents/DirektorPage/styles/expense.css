@@ -1,0 +1,77 @@
+.expense-box {
+  padding: 95px 0;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.expense-box .card {
+  width: 50%;
+  padding: 90px 20px;
+  margin-top: 35px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.1);
+}
+.expense-box .card input,
+.expense-box .card textarea,
+.expense-box .card select {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 50%;
+}
+.expense-box .card button {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.card-title {
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.show-discount-btn {
+  cursor: pointer;
+}
+.show-discount-btn:hover {
+  background: cornflowerblue;
+  color: #fff;
+}
+.notification {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  color: rgb(21, 209, 21);
+}
+._expense .register-table-box {
+  width: 100% !important;
+}
+@media (max-width: 768px) {
+  .expense-box .card {
+    margin-top: 50px;
+    width: 90%;
+    padding: 60px 20px;
+  }
+  .expense-box .card input,
+  .expense-box .card textarea,
+  .expense-box .card select {
+    width: 90%;
+  }
+  .expense-box .card button {
+    width: 90%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .expense-box .card {
+    margin-top: 50px;
+    width: 70%;
+    padding: 60px 20px;
+  }
+  .expense-box .card input,
+  .expense-box .card textarea,
+  .expense-box .card select {
+    width: 90%;
+  }
+  .expense-box .card button {
+    width: 90%;
+  }
+}

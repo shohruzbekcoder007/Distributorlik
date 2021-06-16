@@ -1,0 +1,19 @@
+.kassir-sidebar {
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+.nav_plus {
+  position: fixed;
+  background: #36394c;
+  width: 120px;
+  height: 71px;
+}
+.kassir-sidebar i {
+  color: #8699ad !important;
+}
+@media (max-width: 900px) {
+  .kassir-sidebar ul li {
+    padding: 5px 0;
+  }
+}

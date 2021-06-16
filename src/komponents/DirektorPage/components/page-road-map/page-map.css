@@ -1,0 +1,28 @@
+.road-map-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+  color: #e0e8f3;
+}
+.road-map-box p {
+  color: #ccc;
+  margin-top: 7px;
+}
+@media (max-width: 867px) {
+  .road-map-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 50px;
+    margin: 50px 0;
+    margin-bottom: 0;
+
+    color: #e0e8f3;
+  }
+}

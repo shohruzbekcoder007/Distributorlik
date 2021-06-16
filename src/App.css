@@ -1,0 +1,118 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #f5f5f5; */
+  background: #222736;
+  /* color: #fff; */
+  /* font-family: "Roboto", sans-serif; */
+}
+body h3,
+h4 {
+  color: #fff;
+}
+.scroll-div i {
+  color: rgb(0, 109, 124) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 1430px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.cf::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.form-group {
+  margin-left: 30px !important;
+}
+.inline-block {
+  display: inline-block;
+}
+.scroll-div {
+  padding-top: 60px;
+}
+
+.main-content-box {
+  width: 95%;
+  padding: 0 30px;
+  padding-top: 75px;
+  margin-left: 5%;
+  background: #222736;
+  min-height: 100vh;
+  padding-bottom: 20px;
+}
+.main-content-box .page-link {
+  background: #2a3142;
+  border: none;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .main-content-box {
+    width: 85%;
+    margin-left: 15%;
+    padding: 20px 10px;
+    padding-top: 75px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-content-box {
+    width: 92%;
+    margin-left: 8%;
+    padding: 20px 10px;
+    padding-top: 75px;
+  }
+}
+.scroll-div .fa-edit,
+.scroll-div .fa-edit:hover {
+  color: rgb(0, 109, 124) !important;
+  background: transparent !important;
+}
+
+@media only screen and (max-width: 1430px) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.table-responsive .table tbody tr td input {
+  width: 150px !important;
+}
+.ReactModal__Content--after-open{
+  margin-left: 50px;
+  margin-top: 70px;
+}

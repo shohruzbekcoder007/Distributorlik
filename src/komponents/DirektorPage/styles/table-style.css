@@ -1,0 +1,171 @@
+body {
+  font-family: "Ubuntu", sans-serif !important;
+}
+.loading {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.table-responsive table tr {
+  border: 2px solid #343b51;
+}
+.table-responsive {
+  margin: 30px auto 0 auto;
+  background: #2a3142;
+  width: 100%;
+  color: #a8b2bc;
+}
+.total-price {
+  position: absolute;
+  width: 20%;
+  height: 40px;
+  background: #2a3142;
+  border: 2px solid #343b51;
+  border-top: transparent;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px;
+  font-size: 14px;
+}
+.total-price p {
+  margin-left: 10px;
+}
+.search {
+  position: fixed;
+  justify-content: space-between;
+  top: 12px;
+  right: 150px;
+  width: 30%;
+  height: 40px;
+  z-index: 99;
+}
+.search select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  color: #fff;
+  background: #353b50;
+  border: 1px solid #a8b2bc;
+  border-radius: 4px;
+  padding: 0 10px 0 20px;
+  outline: none;
+  backdrop-filter: blur(10px);
+  z-index: 101;
+}
+.statistics-box {
+  position: relative;
+}
+.Limit-box {
+  z-index: 1 !important;
+}
+.Limit-box select {
+  position: absolute;
+  top: -49px;
+  width: 300px;
+  height: 38px;
+  color: #fff;
+  background: #353b50;
+  padding: 0 10px 0 20px;
+  outline: none;
+  backdrop-filter: blur(10px);
+  z-index: 90;
+}
+.search input::placeholder {
+  color: #fff;
+}
+.search input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  height: 100%;
+  color: #fff;
+  background: #353b50;
+  border: 1px solid #a8b2bc;
+  border-radius: 4px;
+  padding: 0 10px 0 40px;
+  outline: none;
+  backdrop-filter: blur(10px);
+}
+
+.search .fa-search {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 57%;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+  z-index: 101;
+}
+.image-td {
+  width: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+.abc-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.abc-table .box {
+  display: block;
+  width: 49%;
+}
+@media (max-width: 768px) {
+  .table-box {
+    padding: 0;
+    padding-top: 65px;
+    border-radius: 7px;
+    background: #fff;
+  }
+  .search {
+    position: fixed;
+    top: 12px;
+    right: 60px;
+    width: 60%;
+    height: 40px;
+    z-index: 99;
+  }
+  .abc-table {
+    flex-direction: column;
+  }
+  .abc-table .box {
+    display: block;
+    width: 100%;
+  }
+  .total-price {
+    width: 79%;
+  }
+
+  .Limit-box select {
+    width: 100%;
+    margin: 20px 0;
+    height: 25px;
+  }
+}
+@media (min-width: 768px) and(max-width:1023px) {
+  .table-box {
+    overflow: scroll;
+    padding: 0;
+    border-radius: 7px;
+    background: #fff;
+  }
+  .search .fa-search {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 45%;
+    padding-right: 10px;
+    border-right: 1px solid #fff;
+    z-index: 101;
+  }
+  .total-price {
+    width: 25%;
+  }
+}

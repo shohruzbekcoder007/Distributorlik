@@ -1,0 +1,366 @@
+::-webkit-scrollbar {
+  width: 2px;
+}
+label {
+  color: #8699ad;
+}
+.register-box {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  min-height: 90%;
+  position: relative;
+}
+.register-form {
+  position: fixed;
+  padding: 30px 50px;
+  right: 25px;
+  top: 95px;
+  width: 30%;
+  height: 85%;
+  background: #2a3142;
+  overflow-y: scroll;
+}
+.register-form .user-logo {
+  margin: 0 auto;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #8699ad;
+}
+.register-form .user-logo .fa-user {
+  font-size: 40px;
+  color: #8699ad;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  filter: drop-shadow(0px 4px 27px rgba(0, 0, 0, 0.25));
+}
+.register-form .input-form {
+  display: flex;
+  flex-direction: column;
+}
+input::placeholder {
+  color: #8699ad;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.register-box .register-form select {
+  background: rgba(0, 0, 0, 0.3);
+  color: #8699ad;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+#check-box {
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#check-box label {
+  margin-top: -20px;
+}
+.register-form .input-form input,
+.register-form .input-form select,
+.register-form .input-form textarea {
+  border: 1px solid #ccc;
+  background: none;
+  padding: 5px 20px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  min-height: 39px;
+  outline: none;
+  color: #8699ad;
+  backdrop-filter: blur(10px);
+}
+.register-form .title {
+  display: flex;
+  justify-content: center;
+  color: #8699ad;
+  font-family: "Poppins";
+}
+.register-form .input-form input:first-child {
+  margin-top: 30px;
+}
+
+.register-table-box {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 65%;
+  text-align: center;
+  box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.fa-edit,
+.fa-edit,
+.fa-check-circle {
+  color: rgb(8, 211, 8);
+  padding: 5px;
+  border-radius: 2px;
+  transition: all 0.5s ease-out;
+}
+.fa-trash,
+.fa-trash,
+.fa-times-circle {
+  color: red;
+  padding: 5px;
+  transition: all 0.5s ease-out;
+  border-radius: 2px;
+}
+.fa-edit:hover,
+.fa-edit:hover,
+.fa-check-circle:hover {
+  color: #fff;
+  background: rgb(8, 211, 8);
+  cursor: pointer;
+}
+.fa-trash:hover,
+.fa-trash:hover,
+.fa-times-circle:hover {
+  color: #fff;
+  background: red;
+  cursor: pointer;
+}
+
+/* Set Sollary style */
+.solary-box {
+  margin-top: 95px;
+}
+.solary-table {
+  width: 100%;
+  text-align: center;
+}
+.solary-box .input-form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  /* border: 1px solid #ccc; */
+  background: #2a3142;
+  border-radius: 5px;
+}
+.solary-box .input-form input {
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+.solary-box .input-form select {
+  width: 200px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: #555;
+}
+.solary-box .input-form label {
+  margin-left: 5px;
+  color: #8699ad;
+}
+
+/* KPI Page Style */
+.hrm-title {
+  position: absolute;
+  left: 26%;
+  color: #fff;
+  margin-top: 25px;
+}
+.form-box {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  min-height: 80%;
+  background: #2a3142;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  padding: 20px 200px;
+  margin-top: 60px;
+  box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+.form-box form {
+  padding-top: 20px;
+  display: block;
+}
+.form-box .form-item {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.form-box .create-plan-item {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.form-item .submit-btn {
+  position: absolute;
+  right: 40px;
+  bottom: 0px;
+}
+.form-box .form-item span {
+  display: flex;
+  align-items: center;
+}
+.form-item span label {
+  margin-right: 10px;
+  color: #8699ad;
+}
+.form-box input,
+.form-box select {
+  display: block;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 5px;
+  padding: 7px 20px;
+  color: #555;
+}
+
+/* plan control table */
+
+.plan-control-table {
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .register-form {
+    position: relative;
+    width: 100%;
+    top: 30px;
+    right: 0px;
+    padding: 30px 10px;
+  }
+  .register-box {
+    min-height: 100%;
+    padding: 0;
+  }
+
+  .register-table-box {
+    position: relative;
+    left: 0;
+    /* top: 30px; */
+    width: 100%;
+  }
+  .solary-table {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .solary-box .input-form {
+    width: 100%;
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .solary-box .input-form input[type="text"],
+  .solary-box .input-form input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  .solary-box .input-form select {
+    width: 100%;
+    padding: 5px;
+  }
+  /* #checkbox {
+    width: 10px;
+    margin-left: 50px;
+    background: red;
+  } */
+  .solary-box .input-form label {
+    margin-left: 10px;
+    margin-top: 5px;
+    color: #8699ad;
+  }
+  .solary-box .input-form span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 25%;
+  }
+  .form-box {
+    margin-top: 60px;
+    padding: 20px;
+    width: 95%;
+  }
+  .form-box .form-item {
+    margin-top: 5px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .form-box input,
+  .form-box select {
+    width: 100%;
+    padding: 7px 20px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  .form-item button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .form-box .form-item span {
+    display: block;
+  }
+  .form-item span {
+    margin-right: 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .form-box {
+    padding: 20px;
+  }
+  .register-table-box {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 63%;
+  }
+  .register-form {
+    padding: 20px;
+    right: 20px;
+    height: 100%;
+  }
+  .form-box .form-item {
+    padding: 0;
+  }
+  .form-box input,
+  .form-box select {
+    width: 100%;
+    margin: 0 20px;
+    display: block;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    color: #555;
+  }
+  .solary-table {
+    padding-bottom: 0px;
+  }
+  .solary-box .input-form {
+    padding: 20px;
+  }
+  .hrm-title {
+    left: 20%;
+  }
+}

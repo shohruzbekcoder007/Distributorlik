@@ -1,0 +1,121 @@
+form {
+  display: flex;
+  flex-direction: row;
+}
+
+table {
+  margin: 0rem;
+  color: white;
+}
+
+.iconButton {
+  font-size: "20px";
+  margin-right: "10px";
+  cursor: "pointer";
+}
+
+span.debt {
+  color: red;
+}
+
+span.ordered {
+  color: fuchsia;
+}
+span.delivered {
+  color: green;
+}
+/*
+.search {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  width: 30%;
+  height: 40px;
+}
+
+.search input::placeholder {
+  color: #fff;
+}
+
+.search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background: #353B50;
+  border: 1px solid rgba(255, 255, 2555, 0.5);
+  border-radius: 4px;
+  padding: 0 10px 0 40px;
+  outline: none;
+  backdrop-filter: blur(10px);
+}
+
+.search .fa-search {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #fff;
+} */
+.form-group {
+  width: 100%;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+.form-group input,
+.form-group select {
+  width: 60%;
+}
+
+@media (max-width: 767px) {
+  .table-box {
+    padding: 0;
+    border-radius: 7px;
+    background: #fff;
+  }
+  .sellPayment-table {
+    overflow-x: scroll;
+  }
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 768px) and(max-width:1023px) {
+  .table-box {
+    overflow: scroll;
+    padding: 0;
+    border-radius: 7px;
+    background: #fff;
+  }
+}
+
+table.table-hover {
+  font-size: 12px;
+}
+
+.oynacha {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000a8;
+  top: 0;
+  left: 0;
+}
+
+.pagination-styles {
+  width: 100%;
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
